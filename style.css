@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Quicksand', sans-serif;
+}
+
+h2 {
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  font-size: 0.9em;
+  text-align: center;
+  padding-top: 30%;
+}
+
+h3 {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.header {
+text-align: center;
+width: 100%;
+align-self: flex-start;
+display: block;
+margin-top: 5em;
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.boxes {
+  height: 100px;
+  width: 100px;
+  border-radius: 20px;
+  margin: 18px;
+  display: inline-block;
+}
+
+#box1 {
+  background-color: rgb(112, 112, 112);
+}
+#box2 {
+  background-color: rgb(144, 144, 144);
+}
+#box3 {
+  background-color: rgb(176, 176, 176);
+}
+#box4 {
+  background-color: rgb(192, 192, 192);
+}
+
+
+.canvasContainer {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.canvasContainer {
+  align-self: flex-start;
+
+}
+
+.canvas {
+  height: 600px;
+  width: 1000px;
+  background-color: yellow;
+}
+
+footer{
+  height: 100px;
+  width: 100%;
+  background-color: rgb(144, 144, 144);
+  position: absolute;
+  bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
