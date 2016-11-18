@@ -65,9 +65,12 @@ margin-top: 5em;
   align-items: center;
 }
 
-.canvasContainer {
-  align-self: flex-start;
-
+.sidebox{
+  height: 100px;
+  width: 100px;
+  border-radius: 20px;
+  margin: 18px;
+  background-color: gray;
 }
 
 .canvas {
@@ -95,12 +98,6 @@ p {
   padding: 2em 7em;
   font-size: 1.5em;
   text-align: justify;
-}
-
-#about {
-
-
-  /*visibility: hidden;*/
 }
 
 

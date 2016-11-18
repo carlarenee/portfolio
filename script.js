@@ -27,14 +27,9 @@ let changeBoxes = function() {
 };
 
 // nav label animation
-let appear = function() {
-  $('.labels').css("visibility", "visible");
-  console.log('label');
-};
-
-let disappear = function() {
-  $(this).css('visibility', 'hidden')
-};
+// let appear = function() {
+//   $('.labels').css("visibility", "visible");
+// };
 
 // event listeners
 $('.boxes').on('click', changeBoxes);
