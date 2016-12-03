@@ -3,91 +3,56 @@
   font-family: 'Quicksand', sans-serif;
 }
 
-h2 {
-
-}
-
-.container {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-header {
-text-align: center;
-width: 100%;
-align-self: flex-start;
-display: block;
-background-color: gray;
-box-shadow: 0 10px 5px #888888;
-}
-
-article {
-  flex: wrap;
-  margin: 0 auto;
-  text-align: center;
-  width: 100vw;
-  height: 80vh;
-  box-sizing: border-box;
-  box-shadow: 0 10px 5px #888888;
-  overflow: scroll;
-  margin-top: 45px;
-}
-
-article.about {
-  background-color: lightgray;
-  padding: 20px 50px 30px 50px;
-}
-
-article.projects {
-  background-color: darkgray;
-}
-
-footer{
-  height: 100px;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-footer img {
-  height: 30px;
-  width: 30px;
-}
-
-.social {
+.rectangle {
+  margin: 0;
   display: inline-block;
-  margin: 0 2em;
+  float: left;
+  width: 50vw;
+  height: 50vh;
 }
 
-p {
-  padding: 2em 7em;
-  font-size: 1.5em;
-  text-align: justify;
+.rectangleContent {
+  position: relative;
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  top: 30%;
+  opacity: 0.0
 }
 
+.title {
+  position: relative;
+  text-align: center;
+  top: 50%;
+}
 
+#welcome {
+  background-color: red;
+}
 
+#about {
+  background-color: purple;
+}
+#projects {
+  background-color: pink;
+}
 
+#contact {
+  background-color: lightblue;
+}
 
+.fullView {
+  width: 100vw;
+  height: 100vh;
+}
 
+.noView {
+  width: 0vw;
+  height: 0vh;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+img {
+  width: 600px;
+}
 
 
