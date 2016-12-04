@@ -2,95 +2,38 @@ console.log('script is connected')
 
 $(function() {
 
-let activateWelcome = () => {
-  $('#welcome').animate({height: '100vh',width: '100vw'}, 500);
+  let $resume = $('.resume');
+  let $resBtn = $('.resumeBtn');
+  let $skillsBtn = $('.skillsBtn');
+  let $skills = $('.skills');
+  let $x = $('.x');
 
-  $('#about').animate({height: '0vh', width: '0vh'}, 500);
-  $('#projects').animate({height: '0vh', width: '0vh'}, 500);
-  $('#contact').animate({height: '0vh', width: '0vh'}, 500);
-  $('#welcomeContent').animate({opacity: '1'}, 1000);
-  $('.title').css({'visibility': 'hidden'});
-}
+  // Show resume on click
+  $resBtn.on('click', () => {
+    $resume.css({'visibility': 'visible', 'height' : '800px', 'width' : '900px'});
+    $('#aboutContent').css({'visibility': 'hidden'});
+  })
 
-let activateAbout = () => {
-  $('#about').animate({height: '100vh',width: '100vw'}, 500);
-  
-  $('#welcome').animate({height: '0vh', width: '0vh'}, 500);
-  $('#projects').animate({height: '0vh', width: '0vh'}, 500);
-  $('#contact').animate({height: '0vh', width: '0vh'}, 500);
-  $('#aboutContent').animate({opacity: '1'}, 1000);
-  $('.title').css({'visibility': 'hidden'});
-}
+  // Hide resume on click
+  $x.on('click', () => {
+    $resume.css({'visibility': 'hidden', 'height' : '0px', 'width': '0px'});
+    $('#aboutContent').css({'visibility': 'visible'});
+  })
 
-let activateProjects = (e) => {
-  $(e.target).animate({height: '100vh',width: '100vw'}, 500);
-  
-  $('#welcome').animate({height: '0vh', width: '0vh'}, 500);
-  $('#about').animate({height: '0vh', width: '0vh'}, 500);
-  $('#contact').animate({height: '0vh', width: '0vh'}, 500);
-  $('#projectsContent').animate({opacity: '1'}, 1000);
-  $('.title').css({'visibility': 'hidden'});
-}
+  // Show skills on click
+  $skillsBtn.on('click', () => {
+    $skills.css({'visibility': 'visible', 'height' : '600px', 'width' : '600px'});
+    $('#aboutContent').css({'visibility': 'hidden'});
+  })
 
-let activateContact = (e) => {
-  $(e.target).animate({height: '100vh',width: '100vw'}, 500);
-  
-  $('#welcome').animate({height: '0vh', width: '0vh'}, 500);
-  $('#about').animate({height: '0vh', width: '0vh'}, 500);
-  $('#projects').animate({height: '0vh', width: '0vh'}, 500);
-  $('#contactContent').animate({opacity: '1'}, 1000);
-  $('.title').css({'visibility': 'hidden'});
-}
-
-let back = () => {
-
-  $('.rectangleContent').animate({opacity: '0'}, 500);
-  $('.title').css({'visibility': 'visible'});
-}
-
-// Event Listneners
-$('#welcome').on('click', activateWelcome)
-$('#about').on('click', activateAbout)
-$('#projects').on('click', activateProjects)
-$('#contact').on('click', activateContact)
-$('.backButton').on('click', back)
+  // Hide skills on click
+  $x.on('click', () => {
+    $skills.css({'visibility': 'hidden', 'height' : '0px', 'width': '0px'});
+    $('#aboutContent').css({'visibility': 'visible'});
+  })
 
 });
 
 
 
 
-
-// let openPage = (e) => {
-//    // $(e.target).animate({height: '100vh',width: '100vw'}, 500);
-//   // console.log(e.target);
-//   // let otherBoxes = $('.rectangle') !== e.target
-//   // console.log(otherBoxes);
-
-//   //let selected = e.target;
-//   let rectangle = $('.rectangle');
-//   //console.log(rectangle);
-
-//   rectangle.each ((e) => {
-//     let section = $(this);
-//     section.on('click', () => {
-//     section.css({'backgroundColor' : "black"})
-    
-
-//     })
-//   })
-// }
-  
-//   // if (rectangle == selected) {
-//   //   selected.addClass('fullView');
-//   // };
-
-//   //     {height: '100vh',width: '100vw'}, 500);
-//   // } else {
-//   //   $('.rectangle').css({"height" : '0vh', "width" : '0vh'});
-//   // };
-
-  
-// //   $('#aboutContent').animate({opacity: '1'}, 1000);
-// //   $('.title').css({'visibility': 'hidden'});
-// // }
