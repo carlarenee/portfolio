@@ -3,56 +3,161 @@
   font-family: 'Quicksand', sans-serif;
 }
 
+p {
+  padding: 20px;
+}
+
+.container {
+  position: fixed;
+  background-image: url("assets/color.svg");
+  /*background-color: black;*/
+  background-size: 100%;
+  height: 100vh;
+  width: 100vw;
+  opacity: 1;
+}
+
 .rectangle {
   margin: 0;
+  padding: 0;
   display: inline-block;
   float: left;
-  width: 50vw;
-  height: 50vh;
+  position: relative;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+
 }
 
 .rectangleContent {
   position: relative;
   text-align: center;
-  width: 50%;
+  width: 60vw;
+  height: 80vh;
   margin: 0 auto;
-  top: 30%;
-  opacity: 0.0
-}
-
-.title {
-  position: relative;
-  text-align: center;
-  top: 50%;
+  top: 40%;
+  opacity: 1;
 }
 
 #welcome {
-  background-color: red;
+  background-image: url("assets/welcome.svg");
+  background-size: 100%;
+  
+}
+
+#squares1 {
+  background-image: url("assets/squares1.svg");
+  background-size: 100%;
 }
 
 #about {
-  background-color: purple;
+  background-image: url("assets/about.svg");
+  background-size: 100%;
 }
+
+#squares2 {
+  background-image: url("assets/squares2.svg");
+  background-size: 100%;
+}
+
 #projects {
-  background-color: pink;
+  background-image: url("assets/projects.svg");
+  background-size: 100%;
+}
+
+#squares3 {
+  background-image: url("assets/squares3.svg");
+  background-size: 100%;
 }
 
 #contact {
-  background-color: lightblue;
+  background-image: url("assets/contact.svg");
+  background-size: 100%;
 }
 
-.fullView {
-  width: 100vw;
-  height: 100vh;
+#contact img {
+  margin: 20px;
 }
 
-.noView {
-  width: 0vw;
-  height: 0vh;
+.resumeBtn {
+  background-image: url("assets/resumeBlack.svg");
+  height: 50px;
+  width: 200px;
+  display: inline-block;
+  margin: 20px;
 }
 
-img {
-  width: 600px;
+.resumeBtn:hover {
+  background-image: url("assets/resumeColor.svg");
+  height: 50px;
+  width: 200px;
+  box-shadow: 10px 10px 5px #888888;
 }
+
+.resume {
+  height: 0px;
+  width: 0px;
+  margin: 0 auto; 
+  overflow: scroll;
+}
+
+.skillsBtn {
+  background-image: url("assets/skillsBlack.svg");
+  height: 50px;
+  width: 200px;
+  display: inline-block;
+  margin: 20px;
+}
+
+.skillsBtn:hover {
+  background-image: url("assets/skillsColor.svg");
+  height: 50px;
+  width: 200px;
+  box-shadow: 10px 10px 5px #888888;
+}
+
+.projectsContainer {
+  position: relative;
+  top: 30%;
+  margin: 0 auto;
+  width: 70vw;
+  height :60vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: scroll;
+}
+
+.projectItem {
+  margin: 20px;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+}
+
+.projectItem img {
+  width: 420px;
+}
+
+.x {
+  height: 45px;
+  width: 45px;
+  background-image: url("assets/x.svg");
+  background-size: 100%;
+  margin-top: 5px;
+  float: right;
+}
+
+.skills {
+  height: 0px;
+  width: 0px;
+  margin: 0 auto; 
+  overflow: scroll;
+}
+
+
+
 
 
